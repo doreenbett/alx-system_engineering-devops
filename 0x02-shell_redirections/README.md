@@ -1,1 +1,1 @@
-Starting redirections
+Starting redirections.

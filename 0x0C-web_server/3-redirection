@@ -5,7 +5,7 @@ sudo apt-get -y install nginx
 sudo chown -R "$USER":"$USER" /var/www/html/index.nginx-debian.html
 sudo chown -R "$USER":"$USER" /etc/nginx/sites-available/default
 
-sudo echo "Hello World!" > /var/www/html/index.nginx-debian.html
+"Hello World!" > /var/www/html/index.nginx-debian.html
 
 redirection=\
 "server {
@@ -19,5 +19,5 @@ redirection=\
 	}
 }"
 
-sudo echo -e "$redirection" > /etc/nginx/sites-available/default
+echo -e "$redirection" > /etc/nginx/sites-available/default
 sudo service nginx start

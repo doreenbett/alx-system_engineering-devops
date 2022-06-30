@@ -1,6 +1,5 @@
-# Installs puppet-lint, version 2.5.0
+# Install flask
 
-package { 'puppet-lint':
-  ensure   => '2.5.0',
-  provider => 'gem',
-}
+  package { 'puppet-lint':
+    ensure => '2.5.0',
+      }

@@ -29,14 +29,14 @@ defaults
         timeout connect 5000
         timeout client  50000
         timeout server  50000
-backend myservers
-	balance roundrobin
-	server 1958-web-01 3.236.228.47:80 check
-	server 1958-web-02 18.206.81.165:80 check
 frontend myfrontend
 	bind :80
 	mode http
 	default_backend myservers
+backend myservers
+	balance roundrobin
+	server 1958-web-01 3.236.228.47:80 check
+	server 1958-web-02 18.206.81.165:80 check
 "
 
 echo "$config" > /etc/haproxy/haproxy.cfg

@@ -1,6 +1,6 @@
 # Installs puppet-lint, version 2.1.0
 
-  package { 'puppet-lint':
-    ensure   => '2.1.0',
-    provider => 'gem',
-  }
+package { 'Installs package':
+  ensure   => '2.1.0'
+  provider => 'gem',
+}
